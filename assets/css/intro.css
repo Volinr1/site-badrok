@@ -1,0 +1,44 @@
+button {
+  font-size: 20px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: #212529;
+}
+
+.row {
+  color: #212529;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #181A1B !important;
+}
+
+.copyright {
+  color: white;
+}
+
+.bg-dark {
+  background-color: #181A1B !important;
+}
+
+#mainNav {
+  background-color: #181A1B;
+}
+
+#rest {
+  font-size: 25px;
+  font-family: Kaushan Script, Helvetica Neue, Helvetica, Arial, cursive;
+  color: rgb(229, 188, 49);
+}
+
