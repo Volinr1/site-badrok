@@ -11,6 +11,7 @@ function copyText(htmlElement)
     inputElement.select();
     document.execCommand('copy');
     inputElement.parentNode.removeChild(inputElement);
+     swal("You copied the ip!","Come on our server and have fun","success", "Close", 1500);
 
 
 }
