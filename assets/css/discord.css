@@ -80,4 +80,15 @@ button {
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
 }
+@media (max-width: 1000px) {
+  .discord-widget.active {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1000px) {
+  .discord-widget .overflow {
+    visibility: hidden;
+  }
+}
 
