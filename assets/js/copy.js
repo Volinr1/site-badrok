@@ -37,8 +37,8 @@ $(document).on('click', '#close', function () {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Da',
-        cancelButtonText: 'Nu'
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No'
     }).then((result) => {
         if (result.value) {
             localStorage.setItem('hide-discord', 1);
