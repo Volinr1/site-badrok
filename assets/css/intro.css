@@ -49,7 +49,7 @@ embed[Attributes Style] {
   border-left-width: 0px;
 }
 
-user agent stylesheet iframe {
+user agent stylesheet embed {
   border-width: 2px;
   border-style: inset;
   border-color: initial;
