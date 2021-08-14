@@ -1,4 +1,4 @@
-var url = "https://api.mcsrvstat.us/2/play.badrok.net:19132";
+var url = "https://api.mcsrvstat.us/2/play.badrok.com:19132";
 $.getJSON(url, function(r) {
  if(r.error){
     $('h2').html('Server Offline');

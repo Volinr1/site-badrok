@@ -21,3 +21,28 @@ function ()
 {
     copyText(document.querySelector('#text'));
 }
+$(document).ready(function () {
+    var discord = localStorage.getItem('hide-discord');
+    if (discord != 1) {
+        $('.discord-widget').addClass('active');
+    }
+});
+
+$(document).on('click', '#close', function () {
+    console.log("sads");
+    Swal.fire({
+        title: 'Are you sure you want to hide discord?',
+        text: "You will need to reload the page to unhide discord",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.value) {
+            localStorage.setItem('hide-discord', 1);
+            $('.discord-widget').removeClass('active').slow();
+        }
+    })
+})

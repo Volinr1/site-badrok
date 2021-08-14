@@ -2,12 +2,6 @@
   right: 13px;
 }
 
-@media (max-width: 1000px) {
-  .discord-widget.active {
-    visibility: hidden;
-  }
-}
-
 .discord-widget {
   transition-property: right;
   transition-duration: 2s;
@@ -25,9 +19,65 @@
   position: absolute;
 }
 
-@media (max-width: 1000px) {
-  .discord-widget .overflow {
-    visibility: hidden;
-  }
+discord-widget #close {
+  border-top-color: initial;
+  border-bottom-color: initial;
+  background-color: rgb(24, 26, 27);
+  border-left-color: rgb(48, 52, 54);
+  border-right-color: rgb(48, 52, 54);
+}
+
+.discord-widget #close {
+  position: absolute;
+  right: 0px;
+  width: 20px;
+  border-top-right-radius: 5px;
+  border: 0px;
+  height: 25px;
+  background-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #fff;
+  z-index: 999;
+}
+
+iframe[Attributes Style] {
+  width: 250px;
+  height: 300px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
+user agent stylesheet iframe {
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+button {
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
 }
 
